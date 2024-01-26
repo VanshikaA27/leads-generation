@@ -1,0 +1,21 @@
+# requirements.txt
+
+# Selenium for web scraping
+selenium
+
+# Beautiful Soup for HTML parsing
+beautifulsoup4
+
+# Requests for making HTTP requests
+requests
+
+# OpenAI GPT-3 (assuming it's used elsewhere in the code)
+openai
+
+# exchangelib for interacting with Microsoft Exchange
+exchangelib
+pandas
+numpy
+flask
+celery
+openpyxl

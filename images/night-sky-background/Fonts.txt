@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Montserrat
+Author: Julieta Ulanovsky
+Url: http://www.fontsquirrel.com/fonts/montserrat
+
+Font: De Valencia
+Author: Manuel Fernández del Campo García
+Url: https://www.fontsquirrel.com/fonts/de-valencia

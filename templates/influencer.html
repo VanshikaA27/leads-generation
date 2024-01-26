@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Form</title>
+    <style>
+        body {
+        
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color : #87CEEB;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #1a237e; /* Dark blue color */
+            margin-top: 50px; /* Added margin to move the heading down */
+        }
+
+        form {
+            background-color: #fff;
+            padding: 30px; /* Increased padding for a larger box */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px; /* Increased width for a larger box */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px; /* Increased padding for input elements */
+            margin-bottom: 20px; /* Increased margin for spacing */
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #2c3e50; /* Dark blue button color */
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1c2833; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Scrape Tool (Influencer)</h1>
+
+    <form method="post" action="/influencers">
+        <label for="input_link">Input Link:</label>
+        <input type="text" id="input_link" name="input_link" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div>
+        <ul>
+         
+            <li> Go to this <a href="https://www.youtube.com/">link</a> (for Influencers)</li>
+            <li> Search the Busineses/topic you want to find results.for ex. Choclate Dealers in USA </li>
+            <li> Copy the above link</li>
+            <li> Paste the link inside the Input text field here </li>
+        </ul>
+    </div>
+
+</body>
+</html>

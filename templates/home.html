@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 50px; /* Adjust the font size as needed */
+            margin-bottom: 20px
+        }
+
+        div.container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+            box-sizing: border-box;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        div.card {
+            flex: 0 0 45%;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            padding: 20px;
+            text-align: center;
+        }
+
+        div.card:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #3498db;
+        }
+
+        p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Scrape Tool</h1>
+
+    <div class="container">
+        <a href="{{ url_for('influencers') }}" class="card">
+            <h2>Influencers Scraping</h2>
+            <p>Click here to go to the Inflencers page</p>
+        </a>
+
+        <a href="{{ url_for('business') }}" class="card">
+            <h2>B2b Scraping</h2>
+            <p>Click here to go to the Business page</p>
+        </a>
+    </div>
+
+   
+</body>
+</html>
