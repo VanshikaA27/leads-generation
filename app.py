@@ -7,12 +7,12 @@ import pandas as pd
 
 app = Flask(__name__)
 
-@app.route('/')
-def home():
-  return render_template('home.html')
+# @app.route('/')
+# def home():
+#   return render_template('home.html')
   
 
-@app.route('/business', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def business():
    if request.method == 'POST':
         input_link = request.form['input_link']
